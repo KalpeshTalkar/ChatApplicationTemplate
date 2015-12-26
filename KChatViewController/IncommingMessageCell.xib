@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="112" id="UXc-fK-WJ7" customClass="IncommingMessageCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="112"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="UXc-fK-WJ7" id="Sor-0t-LRo">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="111"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" TODAY " textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OAu-aa-UqO">
+                        <rect key="frame" x="132" y="8" width="57" height="18"/>
+                        <animations/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sSB-OO-Flg">
+                        <rect key="frame" x="8" y="37" width="40" height="40"/>
+                        <animations/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="Eqy-sX-3B5"/>
+                            <constraint firstAttribute="width" constant="40" id="f7V-yQ-BMx"/>
+                        </constraints>
+                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZqW-y3-OXo">
+                        <rect key="frame" x="56" y="37" width="20" height="8"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="6vt-Q5-Hvy"/>
+                            <constraint firstAttribute="height" constant="8" id="HKG-5U-64c"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2p5-Ny-5rd">
+                        <rect key="frame" x="63" y="37" width="65" height="66"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="?" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="6NT-p5-vRo" customClass="MessageTextView">
+                                <rect key="frame" x="2" y="15" width="61" height="34"/>
+                                <animations/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PAj-E3-j77">
+                                <rect key="frame" x="6" y="3" width="53" height="16"/>
+                                <animations/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="08:47 PM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KeV-9x-9nk">
+                                <rect key="frame" x="8" y="49" width="51" height="14"/>
+                                <animations/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="PAj-E3-j77" secondAttribute="trailing" constant="6" id="4Cv-y1-OJe"/>
+                            <constraint firstItem="6NT-p5-vRo" firstAttribute="leading" secondItem="2p5-Ny-5rd" secondAttribute="leading" constant="2" id="D7n-1A-Fi4"/>
+                            <constraint firstAttribute="trailing" secondItem="6NT-p5-vRo" secondAttribute="trailing" constant="2" id="OfO-6i-fwX"/>
+                            <constraint firstItem="6NT-p5-vRo" firstAttribute="top" secondItem="2p5-Ny-5rd" secondAttribute="top" constant="15" id="PYo-ac-QZW"/>
+                            <constraint firstItem="PAj-E3-j77" firstAttribute="top" secondItem="2p5-Ny-5rd" secondAttribute="top" constant="3" id="UPb-q6-OdG"/>
+                            <constraint firstItem="KeV-9x-9nk" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="2p5-Ny-5rd" secondAttribute="leading" constant="8" id="YOQ-Vk-VzG"/>
+                            <constraint firstItem="KeV-9x-9nk" firstAttribute="top" secondItem="6NT-p5-vRo" secondAttribute="bottom" id="gxf-9E-B2T"/>
+                            <constraint firstItem="PAj-E3-j77" firstAttribute="leading" secondItem="2p5-Ny-5rd" secondAttribute="leading" constant="6" id="r8n-AK-gF9"/>
+                            <constraint firstAttribute="bottom" secondItem="KeV-9x-9nk" secondAttribute="bottom" constant="3" id="rqN-b9-mS1"/>
+                            <constraint firstAttribute="trailing" secondItem="KeV-9x-9nk" secondAttribute="trailing" constant="6" id="xUl-XM-EzO"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <animations/>
+                <constraints>
+                    <constraint firstItem="sSB-OO-Flg" firstAttribute="leading" secondItem="Sor-0t-LRo" secondAttribute="leading" constant="8" id="0E8-Z6-1zM"/>
+                    <constraint firstItem="OAu-aa-UqO" firstAttribute="top" secondItem="Sor-0t-LRo" secondAttribute="top" constant="8" id="27y-3w-gKO"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="2p5-Ny-5rd" secondAttribute="trailing" constant="167" id="KaA-ke-WMx"/>
+                    <constraint firstItem="2p5-Ny-5rd" firstAttribute="leading" secondItem="sSB-OO-Flg" secondAttribute="trailing" constant="15" id="L1J-qk-hIj"/>
+                    <constraint firstItem="OAu-aa-UqO" firstAttribute="centerX" secondItem="Sor-0t-LRo" secondAttribute="centerX" id="VtM-Hw-5gM"/>
+                    <constraint firstItem="2p5-Ny-5rd" firstAttribute="top" secondItem="sSB-OO-Flg" secondAttribute="top" id="bdp-yA-KDp"/>
+                    <constraint firstAttribute="bottom" secondItem="2p5-Ny-5rd" secondAttribute="bottom" constant="8" id="eI4-JW-nFu"/>
+                    <constraint firstItem="ZqW-y3-OXo" firstAttribute="leading" secondItem="sSB-OO-Flg" secondAttribute="trailing" constant="8" id="iD6-Ec-hgV"/>
+                    <constraint firstItem="sSB-OO-Flg" firstAttribute="top" secondItem="Sor-0t-LRo" secondAttribute="top" constant="37" id="jak-Wh-V25"/>
+                    <constraint firstItem="ZqW-y3-OXo" firstAttribute="top" secondItem="sSB-OO-Flg" secondAttribute="top" id="zrn-Hi-bef"/>
+                </constraints>
+            </tableViewCellContentView>
+            <animations/>
+            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+            <connections>
+                <outlet property="headerLabel" destination="OAu-aa-UqO" id="BUn-vO-roc"/>
+                <outlet property="messageContentTailView" destination="ZqW-y3-OXo" id="1AT-qw-E6X"/>
+                <outlet property="messageContentView" destination="2p5-Ny-5rd" id="WAf-cI-6jr"/>
+                <outlet property="messageContentViewTrailingConstraint" destination="KaA-ke-WMx" id="Rnd-UC-xgh"/>
+                <outlet property="messageTextView" destination="6NT-p5-vRo" id="xlw-mB-cco"/>
+                <outlet property="messageTextViewTopConstraint" destination="PYo-ac-QZW" id="t2E-pa-IQl"/>
+                <outlet property="senderAvatarButton" destination="sSB-OO-Flg" id="KKW-Qu-mSD"/>
+                <outlet property="senderAvatarTopConstraint" destination="jak-Wh-V25" id="OeH-Cu-0kH"/>
+                <outlet property="senderNameLabel" destination="PAj-E3-j77" id="JIV-94-J9W"/>
+                <outlet property="timeLabel" destination="KeV-9x-9nk" id="erw-y1-8vc"/>
+            </connections>
+            <point key="canvasLocation" x="230" y="162"/>
+        </tableViewCell>
+    </objects>
+</document>
